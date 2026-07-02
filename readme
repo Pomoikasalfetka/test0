@@ -1,0 +1,12 @@
+#Запускаем тесты для проверки функционала провадера , из корня проекта
+python -m unittest -v providers.test_basic_provider
+providers - тесты связанные с провайдерами
+1. Сравнить провадеры из эластика и те которые мы имеем как ожидаемый результат
+2. Создать 4 активных провайдера , кем мы пользуемся
+3. (Негативный тест) - попытка создать провайдера с ИД = -1
+
+python -m unittest -v user.test_create_user
+python -m unittest -v scenarios.create_product.test_create_product.test_create_three_products_type_1_standart
+
+#Запуск сценариев
+python run_scenarios.py
